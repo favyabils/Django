@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def landing(req):
-    return render(req, "Background/remove.html")
+    return render(req, "remove.html")
    
 
 
