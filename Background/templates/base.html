@@ -1,3 +1,4 @@
+{% load static %}
 :<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -10,15 +11,38 @@
         <title>{% block title  %}Template{% endblock  %}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="{% static '/css/removebg.css' %}">
+        <link rel="shortcut icon" type="image/ico" href="{% static '/img/favicon.ico' %}">
         {% block head %}{% endblock  %}
     </head>
     <body>
+      <header>
+         <nav>
+            <a href="/"> <img src="{% static '/img/Logo.png'%}" alt="Log" width="100px" height="auto"> </a>
+
+             <div >
+                <a class="Logo" href="/"> Editsy </a>
+             <div>
+             <a class="clicka" href="/home"> Home</a>
+             <a class="clickb" href="/about"> About Us</a> 
+             <a class="clickc" href="/contact">Contacts</a> 
+             <a class="clickd" href="/login"> Log In </a>
+     
+           <a  href="/signup"> <button  class="sign"> Sign Up</button> </a>
+           
+           
+           
+           </nav>
+           </header>
+
+         {% block content  %}
+       
+         {% endblock  %}
+
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
         <script src="" async defer></script>
-        {% block content  %}{% endblock  %}
     </body>
 </html>

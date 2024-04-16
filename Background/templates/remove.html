@@ -1,6 +1,12 @@
 {% extends "./base.html" %}
 {% load static %}
 
-{% block title %}{% endblock  %}
-{% block head %}{% endblock  %}
-{% block content %}{% endblock  %}
+{% block title %} Editsy {% endblock  %}
+
+{% block head %}
+ <link rel="stylesheet" href="{% static '/css/remove_template.css' %}">
+{% endblock  %}
+
+{% block content %}
+<a  href="/upload"> <button  class="upload"> Upload Image </button> </a>
+{% endblock  %}  
