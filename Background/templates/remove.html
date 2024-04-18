@@ -8,5 +8,11 @@
 {% endblock  %}
 
 {% block content %}
-<a  href="/upload"> <button  class="upload"> Upload Image </button> </a>
+
+<form method="post" action="/upload">
+    <input id="image" type="file" placeholder="Upload your image" />
+    <label class="upload" for="image"> Upload Image </label>
+</form>
+
+<img class="face" src="{% static '/img/bg.png'%}" alt="rembg" width="300px" height="auto">
 {% endblock  %}  

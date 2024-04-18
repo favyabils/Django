@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import landing
+from .views import landing,upload
 
 urlpatterns = [
-    path("", landing)
+    path("", landing),
+    path("upload", upload),
 ]
