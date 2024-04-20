@@ -1,0 +1,13 @@
+body {
+    background-image: url("/static/img/purple.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(226, 200, 250); }
+
+.form {
+        background-color: white;
+        width: 400px;
+        border-radius: 8px;
+        padding: 20px 40px;
+        box-shadow: 0 10px 25px rgba(92, 99, 105, .2)}
+

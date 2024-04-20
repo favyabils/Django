@@ -7,6 +7,12 @@ def landing(req):
 
 def upload(req):
     return render(req, "upload.html")
+
+def login(req):
+    return render(req, "login.html")
+
+def signup(req):
+    return render(req, "signup.html")
    
 
 
