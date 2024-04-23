@@ -6,8 +6,32 @@ body {
   }
 
 .lform {
-    background-color: white;
-    width: 400px;
+    background-color: rgb(252, 226, 252);
+    width: 850px;
+    height: 550px;
+    position: fixed;
+    top: 70px;
+    left: 310px;
     border-radius: 8px;
     padding: 20px 40px;
     box-shadow: 0 10px 25px rgba(92, 99, 105, .2)}
+
+.uname{display: block;}
+
+.password{display: block;}
+
+.log{display: block;}
+
+.remember{display: inline;}
+
+.psw{display: inline;}
+
+.pass{display: inline;}
+
+.but{display: inline;}
+
+
+
+
+
+

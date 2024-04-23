@@ -6,8 +6,28 @@ body {
 
 .form {
         background-color: white;
-        width: 400px;
+        width: 850px;
+        height:550px;
         border-radius: 8px;
         padding: 20px 40px;
-        box-shadow: 0 10px 25px rgba(92, 99, 105, .2)}
+        box-shadow: 0 10px 25px rgba(92, 99, 105, .2);  
+        position: fixed;
+        left: 310px;
+        top: 70px; }
+
+.maggi{position: fixed;
+     top: 150px;
+     left: 800px; }
+
+hr{width: 300px;
+   margin-left: 7px;}
+
+.email{display: block;}
+
+.password{display: block;}
+
+.repassword{display: block;}
+
+.mag{position: fixed;
+     left:450px}
 
