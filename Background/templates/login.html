@@ -17,9 +17,13 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <form class="lform">
-            <div class="container">
+     <div class="auth" >
+        <form class="lform" method="post">
+            {% csrf_token %}
+              <div>
+               <h1> Log In <h1>
+              </div>
+              
                 <label class="uname" for="uname"><b>Username</b></label>
                 <input class="uname" type="text" placeholder="Enter Username" name="uname" required>
 
@@ -30,12 +34,12 @@
                 <label>
                 <input class="remember" type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
-            </div>
+            
                 <div class="container" style="background-color:#f1f1f1">
                 <button class="but" type="button" class="cancelbtn">Cancel</button>
                 <span class="psw">Forgot <a class="pass" href="#">password?</a></span>
-            </div>
         </form>
-        <script src="" async defer></script>
+     </div>  
+       <script src="" async defer></script>
     </body>
 </html>

@@ -17,34 +17,37 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-    <form class="form">
-        <div class="container">
-          <h1>Sign Up</h1>
-          <hr>
-
-    <img class="maggi" src="{% static '/img/Desk1.jpg'%}" alt="chair" width="400px" height="auto">
+        <div class="auth" >
+            <form class="form" method="post">
+               {% csrf_token %} 
+                <h1>Sign Up</h1>
+                <hr>
+                <img class="maggi" src="{% static '/img/Desk1.jpg'%}" alt="chair" width="400px" height="auto">
     
+                <label class="first_name" for="f_name"><b>First Name</b></label>
+                <input class="first_name" type="text" placeholder="Enter First Name" name="f_name" id="f_name" required>
 
-    <label class="email" for="email"><b>Email</b></label>
-    <input class="email" type="text" placeholder="Enter Email" name="email" id="email" required>
+                <label class="last_name" for="l_name"><b>Last Name</b></label>
+                <input class="last_name" type="text" placeholder="Enter Last Name" name="l_name" id="l_name" required>
 
-    <label class="password" for="psw"><b>Password</b></label>
-    <input class="password" type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                <label class="username" for="u_name"><b>UserName</b></label>
+                <input class="username" type="text" placeholder="Enter Username" name="u_name" id="u_name" required>
 
-    <label class="repassword" for="psw-repeat"><b>Repeat Password</b></label>
-    <input class="repassword" type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-    <hr>
+                <label class="email" for="email"><b>Email</b></label>
+                <input class="email" type="text" placeholder="Enter Email" name="email" id="email" required>
 
-    <p >By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-    <button type="submit" class="registerbtn">Sign Up</button>
-  </div>
+                <label class="password" for="psw"><b>Password</b></label>
+                <input class="password" type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
-    </form>
-        
+                <label class="repassword" for="psw-repeat"><b>Repeat Password</b></label>
+                <input class="repassword" type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                <hr>
+
+                <p >By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                <button type="submit" class="registerbtn">Sign Up</button>
+                <p>Already have an account? <a href="#">Sign in</a>.</p>
+             </form>
+        </div>   
         <script src="" async defer></script>
     </body>
 </html>

@@ -22,12 +22,19 @@ body {
 hr{width: 300px;
    margin-left: 7px;}
 
+.first_name{display: block;}
+.last_name{display: block;}
+.username{display: block;}
+
 .email{display: block;}
 
 .password{display: block;}
 
 .repassword{display: block;}
 
+
 .mag{position: fixed;
      left:450px}
+
+
 
