@@ -1,32 +1,24 @@
-body{background-color: rgb(240, 227, 253);}
+body{background-color:white;}
 
 img{position: fixed;
-    top: 8px;
+    top: 0px;
     left: 80px;
     border-radius: 20px;}
 
-.Logo{position: fixed;
-    top: 20px;
-    left: 200px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30pt;
-    color: black;
-    text-decoration: none;}
-
-nav {background-color: rgb(240, 227, 253);
+nav {background-color: white;
             color: black;
-            border-bottom: 0pt solid rgb(203, 21, 223);
+            border-bottom: 0pt solid rgb(85, 121, 248);
             position: fixed;
             top: 0px;
             left:0px;
             right: 0px;
             height: 12%;
-            box-shadow: 1px 1px 10px 0px rgb(203, 21, 223);}
+            box-shadow: 1px 1px 10px 0px rgb(85, 121, 248);}
 
 
 
-.sign{background-color:rgb(203, 21, 223);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.sign{background-color:rgb(85, 121, 248);
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 13pt;
     border: none;
     border-radius: 25px;
@@ -40,49 +32,49 @@ nav {background-color: rgb(240, 227, 253);
     top:17px;}
 .sign:hover{outline: none !important;
             background-color: white;
-             color:rgb(203, 21, 223) ;}
+             color:rgb(85, 121, 248) ;}
 
 .clicka{padding: 10px;
        position: fixed;
        top: 20px;
        left: 600px;
-       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       font-family: Arial, Helvetica, sans-serif;
        font-size: 12pt;
        color: black;
        text-decoration: none;
        }
-.clicka:hover{text-decoration: underline rgb(203, 21, 223);}
+.clicka:hover{text-decoration: underline rgb(85, 121, 248);}
 
 .clickb{padding: 10px;
     position: fixed;
     top: 20px;
     left: 670px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
     color: black;
     text-decoration: none;}
-.clickb:hover{text-decoration: underline rgb(203, 21, 223);}
+.clickb:hover{text-decoration: underline rgb(85, 121, 248);}
 
 .clickc{padding: 10px;
     position: fixed;
     top: 20px;
     left: 770px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
     color: black;
     text-decoration: none;}
-.clickc:hover{text-decoration: underline rgb(203, 21, 223);}
+.clickc:hover{text-decoration: underline rgb(85, 121, 248);}
 
 .clickd{padding: 10px;
     position: fixed;
     top: 20px;
     right: 170px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
     color: black;
     text-decoration: none;
     }
-.clickd:hover{text-decoration: underline rgb(203, 21, 223);}
+.clickd:hover{text-decoration: underline rgb(85, 121, 248);}
 
 
 

@@ -1,9 +1,10 @@
-.upload{background-color:rgb(203, 21, 223);
+.upload{background-color:rgb(85, 121, 248);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16pt;
+    padding-left: 40px;
+    padding-top: 10px;
     border: none;
     border-radius: 25px;
-    padding: 10px;
     color: white;
     height: 50px;
     width: 200px;

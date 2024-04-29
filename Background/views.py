@@ -12,8 +12,8 @@ def upload(req):
 
 def login_view(req):
     if req.method == "POST":
-       username = req.POST['username']
-       password = req.POST['password']
+       username = req.POST['uname']
+       password = req.POST['psw']
 
        try:
           user = authenticate(username=username, password=password)
@@ -34,23 +34,19 @@ def logout_view(req):
 
 def signup(req):
     if req.method == "POST":
-        first_name = req.POST['first_name'] 
-        last_name = req.POST['last_name'] 
-        username = req.POST['username'] 
-        password = req.POST['password'] 
+        first_name = req.POST['f_name'] 
+        last_name = req.POST['l_name'] 
+        username = req.POST['u_name'] 
+        password = req.POST['psw'] 
         email = req.POST['email'] 
 
-        try:
-            User.objects.create_user(
-                first_name= first_name,
-                last_name= last_name,
-                email= email,
-                username= username,
-                password= password)
-            return HttpResponseRedirect("/")
-
-        except:
-          print("error")
-          pass
+      
+        User.objects.create_user(
+            first_name= first_name,
+            last_name= last_name,
+            email= email,
+            username= username,
+            password= password)
+        return HttpResponseRedirect("/")
 
     return render(req, "signup.html")

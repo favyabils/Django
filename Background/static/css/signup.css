@@ -1,8 +1,10 @@
 body {
-    background-image: url("/static/img/purple.jpg");
+    background-image: url("/static/img/sblue_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(226, 200, 250); }
+
+
 
 .form {
         background-color: white;
@@ -19,22 +21,90 @@ body {
      top: 150px;
      left: 800px; }
 
-hr{width: 300px;
-   margin-left: 7px;}
+.already{position: fixed;
+     bottom: 120px;
+     left: 850px;}
+a{text-decoration: underline;
+  color: black;}
 
-.first_name{display: block;}
-.last_name{display: block;}
-.username{display: block;}
-
-.email{display: block;}
-
-.password{display: block;}
-
-.repassword{display: block;}
-
+hr{width: 350px;
+   margin-left: 5px;
+   color: rgb(115, 170, 246);}
 
 .mag{position: fixed;
      left:450px}
+
+.first_name{display: block;
+            border-radius: 20px;
+            width: 40%;
+            height: 50px;
+            border: 1.5px solid rgb(212, 212, 212);
+            padding: 10px;
+            padding-left: 10px;
+            margin-bottom: 15px;}
+
+.first_name:focus{outline: none !important;
+                  border:2px solid  rgb(115, 170, 246) ;}
+
+.username{display: block;
+          border-radius: 20px;
+     width: 40%;
+     height: 50px;
+     border: 1.5px solid rgb(212, 212, 212);
+     padding: 10px;
+     padding-left: 10px;
+     margin-bottom: 15px;}
+
+.username:focus{outline: none !important;
+          border:2px solid  rgb(115, 170, 246) ;}
+
+.email{display: block;
+       border-radius: 20px;
+       width: 40%;
+       height: 50px;
+       border: 1.5px solid rgb(212, 212, 212);
+       padding: 10px;
+       padding-left: 10px;
+       margin-bottom: 15px;}
+
+.email:focus{outline: none !important;
+          border:2px solid  rgb(115, 170, 246) ;}
+
+.password{display: block;
+          border-radius: 20px;
+          width: 40%;
+          height: 50px;
+          border: 1.5px solid rgb(212, 212, 212);
+          padding: 10px;
+          padding-left: 10px;
+            margin-bottom: 15px;}
+
+.password:focus{outline: none !important;
+               border:2px solid  rgb(115, 170, 246) ;}
+
+.repassword{display: block;
+           border-radius: 20px;
+           width: 40%;
+           height: 50px;
+           border: 1.5px solid rgb(212, 212, 212);
+           padding: 10px;
+           padding-left: 10px;
+           margin-bottom: 15px;}
+
+.repassword:focus{outline: none !important;
+               border:2px solid  rgb(115, 170, 246) ;}
+
+
+.registerbtn{display: block;
+            width:15%;
+            height: 50px;
+     background-color: rgb(115, 170, 246);
+     color: white;
+     font-size: 12pt;
+     border-radius:4px ;
+     border: none;
+     position: fixed;
+     bottom: 120px;}
 
 
 
