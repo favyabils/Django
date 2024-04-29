@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+2q^(#9p=28v6g^zy&6%qji9#0_yz2uxbgx^cl77yf%@ba4mg^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pixit.onrender.com','127.0.0.1'] #"*" allows all server to host site
 
 
 # Application definition
