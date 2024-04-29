@@ -90,7 +90,7 @@ if(os.getenv("DEBUG")) == True:
 else:
     DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': os.getenv("NAME"),
         'HOST': os.getenv("HOST"),
         'USER': os.getenv("USER"),
