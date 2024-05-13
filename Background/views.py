@@ -35,7 +35,6 @@ def logout_view(req):
 def signup(req):
     if req.method == "POST":
         first_name = req.POST['f_name'] 
-        last_name = req.POST['l_name'] 
         username = req.POST['u_name'] 
         password = req.POST['psw'] 
         email = req.POST['email'] 
@@ -43,7 +42,7 @@ def signup(req):
       
         User.objects.create_user(
             first_name= first_name,
-            last_name= last_name,
+            last_name= "",
             email= email,
             username= username,
             password= password)

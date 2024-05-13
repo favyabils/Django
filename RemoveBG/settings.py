@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+2q^(#9p=28v6g^zy&6%qji9#0_yz2uxbgx^cl77yf%@ba4mg^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEBUG")
+DEBUG = bool(os.getenv("DEBUG"))
 
 ALLOWED_HOSTS = [os.getenv("ALLOWED_HOSTS")] #"*" allows all server to host site
 #'pixit.onrender.com','127.0.0.1'
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'Background'
 ]
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', #Ask question
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
@@ -80,7 +82,7 @@ WSGI_APPLICATION = 'RemoveBG.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-if(os.getenv("DEBUG")) == True:
+if DEBUG:
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -132,10 +134,12 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.0/howto/static-files/
+# https://docs.djangoproject.com/en/5.0/howto/static-files/c
 
 STATIC_ROOT = BASE_DIR/ 'static/'
 STATIC_URL = 'static/'
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

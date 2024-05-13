@@ -20,12 +20,17 @@
          <nav>
             <a href="/"> <img src="{% static '/img/Logo.png'%}" alt="Log" width="140px" height="auto"> </a>
 
-             <a class="clicka" href="/home"> Home</a>
-             <a class="clickb" href="/about"> About Us</a> 
-             <a class="clickc" href="/contact">Contacts</a> 
-             <a class="clickd" href="/login"> Log In </a>
-     
-           <a  href="/signup"> <button  class="sign"> Sign Up</button> </a>
+            <a class="clicka" href="/home"> Home</a>
+            <a class="clickb" href="/about"> About Us</a> 
+            <a class="clickc" href="/contact">Contacts</a> 
+
+            {% if user.is_authenticated %}
+            <a class="clickd" href="/"> My Account</a>
+            {% else %}
+            <a class="clickd" href="/login"> Log In </a>
+            <a  href="/signup"> <button  class="sign"> Sign Up</button> </a>
+            {% endif %} 
+    
            
            
            
